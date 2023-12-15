@@ -1,0 +1,288 @@
+/* 
+Table of contents::after
+
+1.  Custom Variables
+2.  Global Styles
+3.  Typography
+4.  Color
+5.  Grid
+6.  Flex
+7.  Layout
+8.  Positioning
+9.  Padding
+10. Margin
+11. @media
+*/
+
+/* 
+1.  Custom Variables
+*/
+
+:root {
+  /* Colors */
+  --dark-blue: #1d2540;
+  --dark-green: #01403a;
+  --white-f2: #f2f2f2;
+  --black: #0d0d0d;
+  --fancy-green: #1aff00;
+  --red: #f3a8a8;
+  --light-blue: #2d3e77;
+  --hover-bg: #B1DBAD;
+  --rating-12-16: #F79E1B;
+  --rating18: #EB001B;
+
+    /* Typography */
+    --montserrat: "Montserrat", sans-serif;
+    --teko: "Teko", sans-serif;
+    --w4: 400;
+    --w5: 500;
+    --w6: 600;
+    --s16: 1rem;
+    --s21: 1.3125rem;
+    --s28: 1.75rem;
+    --lstd: 1.5;
+  
+    /* Border Radius */
+    --r8: 0.5rem;
+}
+
+/*
+2.  Global Styles
+*/
+
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--dark-green);
+  color: var(--white-f2);
+  padding: 0;
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--montserrat);
+  font-weight: var(--w5);
+  font-size: var(--s16);
+  line-height: var(--lstd);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+main {
+  flex: 1;
+}
+
+/* Loader */
+
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Button animation */
+
+/* The following is for transition for my buttons */
+.cta {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cta:before {
+  content: '';
+  padding: 10px;
+  background-color: var(--fancy-green);
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -25px;
+  left: -70px;
+  transition: left ease-in-out 1s;
+  opacity: 0.3;
+}
+
+.cta:hover:before {
+  left: 130%;
+}
+
+/* The following code is hiding the content for regular users but keeping it accessible. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  background-color: transparent;
+  color: transparent;
+}
+
+
+/*
+3.  Typography
+*/
+
+
+/* 
+4.  Color
+*/
+
+
+/* 
+5.  Grid
+*/
+
+
+/* 
+6.  Flex
+*/
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+
+/* 
+7.  Layout
+*/
+
+.hidden {
+  display: none;
+}
+
+
+/* 
+8.  Positioning
+*/
+
+
+/* 
+9.  Padding
+*/
+
+
+/* 
+10. Margin
+*/
+
+
+/* 
+11. @Media
+*/
