@@ -265,6 +265,7 @@ nav .active {
   background-color: var(--dark-green);
 }
 
+main,
 nav .active {
   background-color: var(--dark-blue);
 }
@@ -373,7 +374,7 @@ nav,
   width: 200px;
 }
 
-div .mobile-srch-box {
+#mobile-srch-box {
   height: 70px;
 }
 

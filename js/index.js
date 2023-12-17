@@ -1,4 +1,4 @@
-import { mediaAllPages } from "./data/fetchMedia.js";
+import { mediaAllPages } from "./data/fetch/fetchMedia.js";
 import { menus } from "./menu/menu.js";
 import { router } from "./router/router.js";
 

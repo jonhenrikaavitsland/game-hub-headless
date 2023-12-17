@@ -1,5 +1,5 @@
-import { urlMedia } from "./api/constants.js";
-import { fetchData } from "./api/fetchData.js";
+import { urlMedia } from "../api/constants.js";
+import { fetchData } from "../api/fetchData.js";
 
 export const mediaContents = await fetchMedia(urlMedia);
 console.log(mediaContents);
