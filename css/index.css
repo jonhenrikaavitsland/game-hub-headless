@@ -253,6 +253,10 @@ main {
   color: var(--dark-blue);
 }
 
+nav .active {
+  color: var(--white-f2);
+}
+
 .mobile-navigation {
   background-color: var(--light-blue);
 }
@@ -261,18 +265,20 @@ main {
   background-color: var(--dark-green);
 }
 
+nav .active {
+  background-color: var(--dark-blue);
+}
+
 .mobile-srch-box {
   background-color: #00000050
 }
 
+.search-btn:hover,
 .desktop-srch-wrap,
 .desktop-srch-wrap input {
   background-color: var(--white-f2);
 }
 
-.search-btn:hover {
-  background-color: var(--white-f2);
-}
 
 
 /* 
@@ -351,6 +357,7 @@ main {
   cursor: pointer;
 }
 
+nav,
 .desktop-header,
 .hidden {
   display: none;
@@ -412,9 +419,18 @@ div .mobile-srch-box,
   border-radius: 8px 0 0 8px;
 }
 
+nav li {
+  border-radius: 25px 25px 0 0;
+}
+
 .desktop-srch-wrap input,
 .desktop-srch-wrap button {
   border: none;
+}
+
+nav li {
+  border: 2px solid;
+  border-color: var(--dark-blue);
 }
 
 /* 
@@ -495,6 +511,10 @@ div .mobile-srch-box,
   padding: 0 10px;
 }
 
+nav li {
+  padding: 1rem 2rem;
+}
+
 
 /* 
 10. Margin
@@ -527,6 +547,7 @@ div .mobile-srch-box,
   6.  Flex
   */
 
+  nav,
   .desktop-header {
     display: flex;
   }
