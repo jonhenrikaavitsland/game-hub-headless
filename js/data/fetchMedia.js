@@ -6,15 +6,19 @@ console.log(mediaContents);
 
 export async function mediaAllPages() {
   const logo = document.querySelector(".logo");
+  const favIcon = document.querySelector(".fav");
+
+  const mediaLogo = mediaContents[2].source_url;
 
   try {
-    logo.src = mediaContents[2].source_url;
+    logo.src = mediaLogo;
+    favIcon.setAttribute("href", mediaLogo);
   } catch (error) {
-    console.log("Ops!, failed to load logo!", error);
+    console.log("Ops! Something went wrong!", error);
   }
 }
 
 export async function fetchMedia(url) {
-  const mediaContents = await fetchData(url);
-  return mediaContents;
+  const content = await fetchData(url);
+  return content;
 }

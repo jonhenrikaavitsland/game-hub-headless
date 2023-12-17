@@ -235,6 +235,10 @@ main {
 3.  Typography
 */
 
+.mobile-navigation a {
+  text-transform: uppercase;
+}
+
 
 /* 
 4.  Color
@@ -242,6 +246,10 @@ main {
 
 .mobile-navigation {
   background-color: var(--light-blue);
+}
+
+.active {
+  color: var(--fancy-green);
 }
 
 /* 
@@ -297,6 +305,11 @@ main {
 /* 
 7.  Layout
 */
+
+.close-btn-wrap,
+.hamburger-wrap {
+  cursor: pointer;
+}
 
 .hidden {
   display: none;
