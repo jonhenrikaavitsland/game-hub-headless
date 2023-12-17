@@ -316,6 +316,9 @@ nav .active {
   flex-direction: column;
 }
 
+.cart-wrap,
+.magnifying-wrap,
+.acc-wrap,
 footer div,
 footer li,
 .desktop-header,
@@ -325,6 +328,9 @@ footer li,
   align-items: center;
 }
 
+.cart-wrap,
+.magnifying-wrap,
+.acc-wrap,
 footer div,
 footer li,
 .mobile-secondary-nav-wrap div,
@@ -375,6 +381,9 @@ nav,
   display: none;
 }
 
+.cart-wrap,
+.magnifying-wrap,
+.acc-wrap,
 .mobile-secondary-nav-wrap div,
 .close-btn-wrap,
 .hamburger-wrap {
@@ -389,6 +398,9 @@ nav,
   height: 70px;
 }
 
+.cart-wrap,
+.magnifying-wrap,
+.acc-wrap,
 footer li,
 .mobile-secondary-nav-wrap div,
 .close-btn-wrap,
