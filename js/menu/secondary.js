@@ -4,7 +4,6 @@ export function secondaryMenu() {
 
   searchIcon.addEventListener("click", searchBox);
   document.addEventListener("keydown", closeMenuEsc);
-  documentBody.addEventListener("click", closeSearchBox);
 
   function searchBox() {
     if (searchContainer.classList.contains("hidden")) {
@@ -24,3 +23,4 @@ export function secondaryMenu() {
     }
   }
 }
+

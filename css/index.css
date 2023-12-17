@@ -316,6 +316,8 @@ nav .active {
   flex-direction: column;
 }
 
+footer div,
+footer li,
 .desktop-header,
 .mobile-secondary-nav-wrap div,
 .close-btn-wrap,
@@ -323,6 +325,8 @@ nav .active {
   align-items: center;
 }
 
+footer div,
+footer li,
 .mobile-secondary-nav-wrap div,
 .close-btn-wrap,
 .mobile-header,
@@ -334,12 +338,19 @@ nav .active {
   align-items: flex-end;
 }
 
+footer div {
+  gap: 10px;
+}
+
 .desktop-secondary-menu,
 .desktop-secondary-menu ul,
 .mobile-navigation ul {
   gap: 30px;
 }
 
+
+
+footer ul li,
 .desktop-secondary-menu,
 .mobile-secondary-nav-wrap div {
   flex: 1;
@@ -378,6 +389,7 @@ nav,
   height: 70px;
 }
 
+footer li,
 .mobile-secondary-nav-wrap div,
 .close-btn-wrap,
 .hamburger-wrap,
@@ -390,6 +402,10 @@ nav,
 .logo,
 .mobile-header {
   height: 120px;
+}
+
+footer {
+  height: 188px;
 }
 
 .desktop-header,
@@ -446,10 +462,13 @@ nav li {
 
 .desktop-checkout-wrap span,
 .mobile-srch-box,
-.mobile-secondary-nav,
 .mobile-navigation,
 .hamburger-wrap {
   position: absolute;
+}
+
+.mobile-secondary-nav {
+  position: fixed;
 }
 
 .mobile-srch-box,
@@ -471,7 +490,7 @@ nav li {
 }
 
 .mobile-secondary-nav {
-  bottom: 0;
+  bottom: 0px;
 }
 
 .mobile-srch-box {
@@ -514,6 +533,14 @@ nav li {
 
 nav li {
   padding: 1rem 2rem;
+}
+
+footer a {
+  padding: 10px;
+}
+
+footer {
+  padding: 10px 20px
 }
 
 
@@ -562,6 +589,10 @@ nav li {
   .mobile-secondary-nav,
   .hamburger-wrap {
     display: none;
+  }
+
+  footer {
+    height: auto;
   }
 
 
