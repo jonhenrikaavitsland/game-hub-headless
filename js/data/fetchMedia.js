@@ -8,7 +8,7 @@ export async function mediaAllPages() {
   const logo = document.querySelector(".logo");
 
   try {
-    logo.setAttribute("src", mediaContents[2].source_url);
+    logo.src = mediaContents[2].source_url;
   } catch (error) {
     console.log("Ops!, failed to load logo!", error);
   }
