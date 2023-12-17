@@ -244,13 +244,23 @@ main {
 4.  Color
 */
 
+.active {
+  color: var(--fancy-green);
+}
+
 .mobile-navigation {
   background-color: var(--light-blue);
 }
 
-.active {
-  color: var(--fancy-green);
+.mobile-secondary-nav {
+  background-color: var(--dark-green);
 }
+
+.mobile-srch-box {
+  background-color: #00000050
+}
+
+
 
 /* 
 5.  Grid
@@ -286,11 +296,13 @@ main {
   flex-direction: column;
 }
 
+.mobile-secondary-nav-wrap div,
 .close-btn-wrap,
 .hamburger-wrap {
   align-items: center;
 }
 
+.mobile-secondary-nav-wrap div,
 .close-btn-wrap,
 .mobile-header,
 .hamburger-wrap {
@@ -299,6 +311,10 @@ main {
 
 .mobile-navigation ul {
   gap: 30px;
+}
+
+.mobile-secondary-nav-wrap div {
+  flex: 1;
 }
 
 
@@ -315,9 +331,18 @@ main {
   display: none;
 }
 
+.mobile-secondary-nav-wrap div,
 .close-btn-wrap,
 .hamburger-wrap {
   width: 50px;
+  height: 50px;
+}
+
+div .mobile-srch-box {
+  height: 70px;
+}
+
+.mobile-srch-box input {
   height: 50px;
 }
 
@@ -331,17 +356,34 @@ main {
   width: minmax(100px, 60%);
 }
 
+div .mobile-srch-box,
+.mobile-secondary-nav {
+  width: 100%;
+}
+
+.mobile-srch-box input {
+  border-radius: var(--r8);
+}
+
 /* 
 8.  Positioning
 */
 
+.mobile-secondary-nav-wrap,
 .mobile-header {
   position: relative;
 }
 
+.mobile-srch-box,
+.mobile-secondary-nav,
 .mobile-navigation,
 .hamburger-wrap {
   position: absolute;
+}
+
+.mobile-srch-box,
+.mobile-secondary-nav {
+  z-index: 8;
 }
 
 .mobile-navigation {
@@ -357,6 +399,14 @@ main {
   right: 10px;
 }
 
+.mobile-secondary-nav {
+  bottom: 0;
+}
+
+.mobile-srch-box {
+  top: -80px;
+}
+
 
 /* 
 9.  Padding
@@ -368,6 +418,10 @@ main {
 
 .mobile-navigation ul a {
   padding: 13px 0;
+}
+
+.mobile-secondary-nav {
+  padding: 10px 0;
 }
 
 /* 
