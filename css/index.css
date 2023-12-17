@@ -244,8 +244,13 @@ main {
 4.  Color
 */
 
+.add-fancy,
 .active {
   color: var(--fancy-green);
+}
+
+.search-btn i {
+  color: var(--dark-blue);
 }
 
 .mobile-navigation {
@@ -260,6 +265,14 @@ main {
   background-color: #00000050
 }
 
+.desktop-srch-wrap,
+.desktop-srch-wrap input {
+  background-color: var(--white-f2);
+}
+
+.search-btn:hover {
+  background-color: var(--white-f2);
+}
 
 
 /* 
@@ -296,6 +309,7 @@ main {
   flex-direction: column;
 }
 
+.desktop-header,
 .mobile-secondary-nav-wrap div,
 .close-btn-wrap,
 .hamburger-wrap {
@@ -309,10 +323,17 @@ main {
   justify-content: center;
 }
 
+.desktop-secondary-menu {
+  align-items: flex-end;
+}
+
+.desktop-secondary-menu,
+.desktop-secondary-menu ul,
 .mobile-navigation ul {
   gap: 30px;
 }
 
+.desktop-secondary-menu,
 .mobile-secondary-nav-wrap div {
   flex: 1;
 }
@@ -322,12 +343,15 @@ main {
 7.  Layout
 */
 
+.desktop-srch-wrap input,
+.search-btn,
 .fa-magnifying-glass,
 .close-btn-wrap,
 .hamburger-wrap {
   cursor: pointer;
 }
 
+.desktop-header,
 .hidden {
   display: none;
 }
@@ -336,13 +360,21 @@ main {
 .close-btn-wrap,
 .hamburger-wrap {
   width: 50px;
-  height: 50px;
+}
+
+.desktop-srch-wrap input {
+  width: 200px;
 }
 
 div .mobile-srch-box {
   height: 70px;
 }
 
+.mobile-secondary-nav-wrap div,
+.close-btn-wrap,
+.hamburger-wrap,
+.desktop-srch-wrap button,
+.desktop-srch-wrap input,
 .mobile-srch-box input {
   height: 50px;
 }
@@ -350,6 +382,11 @@ div .mobile-srch-box {
 .logo,
 .mobile-header {
   height: 120px;
+}
+
+.desktop-header,
+.desktop-header img {
+  height: 200px;
 }
 
 .mobile-navigation {
@@ -362,19 +399,35 @@ div .mobile-srch-box,
   width: 100%;
 }
 
+.desktop-srch-wrap,
 .mobile-srch-box input {
   border-radius: var(--r8);
+}
+
+.desktop-srch-wrap button {
+  border-radius: 0 8px 8px 0;
+}
+
+.desktop-srch-wrap input {
+  border-radius: 8px 0 0 8px;
+}
+
+.desktop-srch-wrap input,
+.desktop-srch-wrap button {
+  border: none;
 }
 
 /* 
 8.  Positioning
 */
 
+.desktop-checkout-wrap,
 .mobile-secondary-nav-wrap,
 .mobile-header {
   position: relative;
 }
 
+.desktop-checkout-wrap span,
 .mobile-srch-box,
 .mobile-secondary-nav,
 .mobile-navigation,
@@ -408,22 +461,40 @@ div .mobile-srch-box,
   top: -80px;
 }
 
+.desktop-checkout-wrap span {
+  top: -12px;
+  right: -3px;
+}
+
 
 /* 
 9.  Padding
 */
-
-.mobile-navigation {
-  padding: 20px 30px 0 10px;
-}
-
-.mobile-navigation ul a {
-  padding: 13px 0;
+.desktop-srch-wrap input {
+  padding: 0 10px;
 }
 
 .mobile-secondary-nav {
   padding: 10px 0;
 }
+
+.desktop-secondary-menu a,
+.mobile-navigation ul a {
+  padding: 13px 0;
+}
+
+.mobile-navigation {
+  padding: 20px 30px 0 10px;
+}
+
+.desktop-secondary-menu {
+  padding: 0 30px 0 0;
+}
+
+.search-btn {
+  padding: 0 10px;
+}
+
 
 /* 
 10. Margin
@@ -433,3 +504,56 @@ div .mobile-srch-box,
 /* 
 11. @Media
 */
+
+@media (min-width: 750px) {
+
+
+  /* 
+  3.  Typography
+  */
+
+
+  /* 
+  4.  Color
+  */
+
+
+  /* 
+  5.  Grid
+  */
+
+
+  /* 
+  6.  Flex
+  */
+
+  .desktop-header {
+    display: flex;
+  }
+
+
+  /* 
+  7.  Layout
+  */
+
+  .mobile-header,
+  .mobile-secondary-nav,
+  .hamburger-wrap {
+    display: none;
+  }
+
+
+  /* 
+  8.  Positioning
+  */
+
+
+  /* 
+  9.  Padding
+  */
+
+
+  /* 
+  10. Margin
+  */
+}
