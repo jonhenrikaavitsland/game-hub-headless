@@ -240,11 +240,31 @@ main {
 4.  Color
 */
 
+.mobile-navigation {
+  background-color: var(--light-blue);
+}
 
 /* 
 5.  Grid
 */
 
+.grid {
+  display: grid;
+}
+
+.mobile-navigation {
+  gap: 20px;
+}
+
+.mobile-navigation {
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr;
+}
+
+.mobile-navigation ul {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}
 
 /* 
 6.  Flex
@@ -258,6 +278,21 @@ main {
   flex-direction: column;
 }
 
+.close-btn-wrap,
+.hamburger-wrap {
+  align-items: center;
+}
+
+.close-btn-wrap,
+.mobile-header,
+.hamburger-wrap {
+  justify-content: center;
+}
+
+.mobile-navigation ul {
+  gap: 30px;
+}
+
 
 /* 
 7.  Layout
@@ -267,16 +302,59 @@ main {
   display: none;
 }
 
+.close-btn-wrap,
+.hamburger-wrap {
+  width: 50px;
+  height: 50px;
+}
+
+.mobile-header {
+  height: 120px;
+}
+
+.mobile-navigation {
+  height: 100vh;
+  width: minmax(100px, 60%);
+}
 
 /* 
 8.  Positioning
 */
+
+.mobile-header {
+  position: relative;
+}
+
+.mobile-navigation,
+.hamburger-wrap {
+  position: absolute;
+}
+
+.mobile-navigation {
+  z-index: 10;
+}
+
+.mobile-navigation {
+  right: 0px;
+}
+
+.hamburger-wrap {
+  top: 10px;
+  right: 10px;
+}
 
 
 /* 
 9.  Padding
 */
 
+.mobile-navigation {
+  padding: 20px 30px 0 10px;
+}
+
+.mobile-navigation ul a {
+  padding: 13px 0;
+}
 
 /* 
 10. Margin

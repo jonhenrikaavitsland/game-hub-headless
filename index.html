@@ -14,50 +14,32 @@
 </head>
 <body>
   <div class="overlay hidden"></div>
-  <header>
-    <div class="heading-top">
-      <div class="logo-container flex">
-        <div class="hamburger-wrap">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <img src="./images/logo-unchecked.png" alt="game hub" class="logo">
-      </div>
-      <div class="heading-right">
-        <p>
-          <a href="./pages/account/">Sign in / Register</a>
-          <span class="cart-wrap">
-            <a href="./pages/cart/">Cart
-              <span class="cart">0</span>
-            </a>
-          </span>
-        </p>
-      </div>
+  <div class="mobile-navigation hidden grid" role="navigation">
+    <div class="close-btn-wrap flex">
+      <i class="fa-regular fa-crosshairs-simple fa-2xl"></i>
     </div>
-    <nav class="hidden flex flex-col">
-      <div class="hamburger-wrap-2">
-        <i class="fa-solid fa-xmark"></i>
+    <ul class="flex flex-col">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="./games/">Games</a>
+      </li>
+      <li>
+        <a href="./about/">About</a>
+      </li>
+      <li>
+        <a href="./contact/">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <header>
+    <div class="mobile-header flex">
+      <div class="hamburger-wrap flex">
+        <i class="fa-solid fa-bars fa-2xl"></i>
       </div>
-      <ul class="flex flex-col">
-        <li class="li-1 active">
-          <a href="#">Home</a>
-        </li>
-        <li class="li-2">
-          <a href="./pages/games/">Games</a>
-        </li>
-        <li class="li-3">
-          <a href="./pages/about/">About</a>
-        </li>
-        <li class="li-4">
-          <a href="./pages/contact/">Contact</a>
-        </li>
-        <li class="link-cart">
-          <a href="./pages/cart/">Cart</a>
-        </li>
-        <li class="link-acc">
-          <a href="./pages/account/">Account</a>
-        </li>
-      </ul>
-    </nav>
+      <img src="#" alt="game hub" class="logo">
+    </div>
   </header>
   <main></main>
   <footer></footer>
