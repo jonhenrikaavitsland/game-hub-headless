@@ -440,7 +440,7 @@ nav,
   display: none;
 }
 
-.decision-help section {
+.decision-help section h2 {
   text-align: center;
 }
 
@@ -453,8 +453,13 @@ nav,
   width: 50px;
 }
 
+
 .desktop-srch-wrap input {
   width: 200px;
+}
+
+.decision-help section img {
+  width: 300px;
 }
 
 #mobile-srch-box {
@@ -498,6 +503,7 @@ footer {
   width: minmax(100px, 60%);
 }
 
+.decision-help section h2,
 .decision-help section,
 .hero-img section,
 div .mobile-srch-box,
@@ -594,7 +600,7 @@ nav li,
 }
 
 .decision-help section img {
-  bottom: -25.5px;
+  bottom: -20.7px;
 }
 
 .mobile-srch-box {
