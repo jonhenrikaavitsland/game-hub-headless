@@ -16,10 +16,24 @@ export function renderLogo() {
   }
 
   function createLogo(parent) {
+    const link = document.createElement("a");
+    if (location.pathname === "/") {
+      link.href = "#";
+    } else {
+      link.href = "/";
+    }
+
     const element = document.createElement("img");
     element.src = `${mediaContents[2].source_url}`;
     element.setAttribute("alt", mediaContents[2].alt_text);
-    parent.append(element);
+    link.appendChild(element);
+
+    const span = document.createElement("span");
+    span.textContent = "home";
+    span.classList.add("visually-hidden");
+    link.appendChild(span);
+
+    parent.append(link);
   }
 }
 
