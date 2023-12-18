@@ -1,15 +1,24 @@
 import { urlMedia } from "../api/constants.js";
 import { fetchData } from "../api/fetchData.js";
 
-export const mediaContents = await fetchMedia(urlMedia);
+const mediaContents = await fetchMedia(urlMedia);
 console.log(mediaContents);
+
+export let logo;
+export let heroImage;
+
+for (let i = 0; i < mediaContents.length; i++) {
+  if (mediaContents[i].id === 36) logo = mediaContents[i];
+  if (mediaContents[i].id === 52) heroImage = mediaContents[i];
+}
+
+console.log(heroImage);
 
 export async function mediaAllPages() {
   const favIcon = document.querySelector(".fav");
-  const mediaLogo = mediaContents[2].source_url;
 
   try {
-    favIcon.setAttribute("href", mediaLogo);
+    favIcon.setAttribute("href", logo.source_url);
   } catch (error) {
     console.log("Ops! Something went wrong!", error);
   }

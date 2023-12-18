@@ -1,4 +1,4 @@
-import { mediaContents } from "../data/fetch/fetchMedia.js";
+import { logo } from "./../data/fetch/fetchMedia.js";
 
 export function renderLogo() {
   const logoContainerMobile = document.querySelector(".logo-container-mobile");
@@ -24,8 +24,8 @@ export function renderLogo() {
     }
 
     const element = document.createElement("img");
-    element.src = `${mediaContents[2].source_url}`;
-    element.setAttribute("alt", mediaContents[2].alt_text);
+    element.src = `${logo.source_url}`;
+    element.setAttribute("alt", logo.alt_text);
     link.appendChild(element);
 
     const span = document.createElement("span");
@@ -36,5 +36,3 @@ export function renderLogo() {
     parent.append(link);
   }
 }
-
-// Add to the element a link element that wraps the img and pointing to root
