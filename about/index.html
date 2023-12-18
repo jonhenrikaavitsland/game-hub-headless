@@ -21,16 +21,16 @@
     </button>
     <ul class="flex flex-col">
       <li>
-        <a href="/">Home</a>
+        <a href="/" class="hover">Home</a>
       </li>
       <li>
-        <a href="../games/">Games</a>
+        <a href="../games/" class="hover">Games</a>
       </li>
       <li class="active">
         <a href="#">About</a>
       </li>
       <li>
-        <a href="../contact/">Contact</a>
+        <a href="../contact/" class="hover">Contact</a>
       </li>
     </ul>
   </div>
@@ -62,20 +62,48 @@
       <button class="hamburger-wrap flex">
         <i class="fa-solid fa-bars fa-2xl"></i><span class="visually-hidden">menu</span>
       </button>
-      <a href="/"><img src="#" alt="game hub" class="logo"></a>
+      <div class="logo-container-mobile">
+        <div class="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </div>
     <div class="desktop-header flex">
-      <div>
-        <a href="/"><img src="#" alt="game hub" class="logo-desktop"></a>
+      <div class="logo-container-desktop">
+        <div class="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div class="desktop-secondary-menu flex flex-col">
         <ul class="flex">
           <li>
-            <a href="../account/">Account</a>
+            <a href="../account/" class="hover">Account</a>
           </li>
           <li>
             <span class="desktop-checkout-wrap">
-              <a href="../checkout/">Checkout <span class="add-fancy">0</span></a>
+              <a href="../checkout/" class="hover">Checkout <span class="add-fancy">0</span></a>
             </span>
           </li>
         </ul>
@@ -91,16 +119,16 @@
     <nav>
       <ul class="flex">
         <li>
-          <a href="/">Home</a>
+          <a href="/" class="hover">Home</a>
         </li>
         <li>
-          <a href="../games/">Games</a>
+          <a href="../games/" class="hover">Games</a>
         </li>
         <li class="active">
-          <a href="../about/">About</a>
+          <a href="../about/" class="hover">About</a>
         </li>
         <li>
-          <a href="../contact/">Contact</a>
+          <a href="../contact/" class="hover">Contact</a>
         </li>
       </ul>
     </nav>
@@ -127,7 +155,7 @@
     <div class="flex">
       &copy; Game Hub
       <a href="#" class="add-fancy">About</a>
-      <a href="../contact/">Contact</a>
+      <a href="../contact/" class="hover">Contact</a>
     </div>
   </footer>
 </body>

@@ -22,3 +22,5 @@ export function renderLogo() {
     parent.append(element);
   }
 }
+
+// Add to the element a link element that wraps the img and pointing to root

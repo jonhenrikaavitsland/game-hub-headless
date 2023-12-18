@@ -244,6 +244,11 @@ main {
 4.  Color
 */
 
+.hover:hover {
+  color: var(--hover-bg);
+  transition: 500ms
+}
+
 .add-fancy,
 .active {
   color: var(--fancy-green);
