@@ -420,7 +420,7 @@ footer li,
   height: 50px;
 }
 
-.logo,
+.logo-container-mobile img,
 .mobile-header {
   height: 120px;
 }
