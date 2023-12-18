@@ -6,13 +6,13 @@ console.log(mediaContents);
 
 export let logo;
 export let heroImage;
+export let questionGirl;
 
 for (let i = 0; i < mediaContents.length; i++) {
   if (mediaContents[i].id === 36) logo = mediaContents[i];
   if (mediaContents[i].id === 52) heroImage = mediaContents[i];
+  if (mediaContents[i].id === 48) questionGirl = mediaContents[i];
 }
-
-console.log(heroImage);
 
 export async function mediaAllPages() {
   const favIcon = document.querySelector(".fav");
