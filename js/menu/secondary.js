@@ -1,4 +1,4 @@
-export function secondaryMenu() {
+export function secondaryMobileMenu() {
   const searchIcon = document.querySelector(".mobile-srch-wrap");
   const searchContainer = document.querySelector(".mobile-srch-box");
 
@@ -23,4 +23,3 @@ export function secondaryMenu() {
     }
   }
 }
-

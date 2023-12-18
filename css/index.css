@@ -253,6 +253,9 @@ main {
   color: var(--dark-blue);
 }
 
+.hamburger-wrap,
+.magnifying-wrap,
+.close-btn-wrap,
 nav .active {
   color: var(--white-f2);
 }
@@ -278,6 +281,12 @@ nav .active {
 .desktop-srch-wrap,
 .desktop-srch-wrap input {
   background-color: var(--white-f2);
+}
+
+.hamburger-wrap,
+.magnifying-wrap,
+.close-btn-wrap {
+  background-color: transparent;
 }
 
 
@@ -452,6 +461,9 @@ nav li {
   border-radius: 25px 25px 0 0;
 }
 
+.hamburger-wrap,
+.magnifying-wrap,
+.close-btn-wrap,
 .desktop-srch-wrap input,
 .desktop-srch-wrap button {
   border: none;

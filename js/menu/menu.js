@@ -1,7 +1,7 @@
 import { hamburgerMenu } from "./hamburger.js";
-import { secondaryMenu } from "./secondary.js";
+import { secondaryMobileMenu } from "./secondary.js";
 
 export function menus() {
   hamburgerMenu();
-  secondaryMenu();
+  secondaryMobileMenu();
 }

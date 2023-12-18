@@ -16,9 +16,10 @@
 <body>
   <div class="overlay hidden"></div>
   <div class="mobile-navigation hidden grid" role="navigation">
-    <div class="close-btn-wrap flex">
+    <button class="close-btn-wrap flex">
+      <span class="visually-hidden">close menu</span>
       <i class="fa-regular fa-crosshairs-simple fa-2xl"></i>
-    </div>
+    </button>
     <ul class="flex flex-col">
       <li class="active">
         <a href="#">Home</a>
@@ -37,31 +38,33 @@
   <div class="mobile-secondary-nav" role="navigation">
     <div class="mobile-secondary-nav-wrap flex">
       <div class="mobile-srch-box flex hidden" id="mobile-srch-box">
-        <label for="search" class="visually-hidden">search our available games</label>
-        <input type="text" name="search" id="search" class="flex">
+        <label for="search-mobile" class="visually-hidden">search our available games</label>
+        <input type="text" name="search-mobile" id="search-mobile" class="flex">
       </div>
       <div class="flex">
         <span class="acc-wrap flex">
-          <a href="./account/"><i class="fa-solid fa-user fa-2xl"></i></a>
+          <a href="./account/"><i class="fa-solid fa-user fa-2xl"></i><span class="visually-hidden">account</span></a>
         </span>
       </div>
       <div class="flex mobile-srch-wrap">
-        <span class="magnifying-wrap flex">
+        <button class="magnifying-wrap flex">
           <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-        </span>
+          <span class="visually-hidden">search</span>
+        </button>
       </div>
       <div class="flex">
         <span class="cart-wrap flex">
-          <a href="./checkout/"><i class="fa-solid fa-cart-shopping-fast fa-2xl"></i></a>
+          <a href="./checkout/"><i class="fa-solid fa-cart-shopping-fast fa-2xl"></i><span class="visually-hidden">checkout</span></a>
         </span>
       </div>
     </div>
   </div>
   <header>
     <div class="mobile-header flex">
-      <div class="hamburger-wrap flex">
+      <button class="hamburger-wrap flex">
         <i class="fa-solid fa-bars fa-2xl"></i>
-      </div>
+        <span class="visually-hidden">menu</span>
+      </button>
       <img src="#" alt="game hub" class="logo">
     </div>
     <div class="desktop-header flex">
@@ -84,6 +87,7 @@
           <input type="text" name="search" id="search" placeholder="...Search games!">
           <button class="search-btn">
             <i class="fa-solid fa-bullseye-arrow fa-2xl"></i>
+            <span class="visually-hidden">go</span>
           </button>
         </div>
       </div>
@@ -109,19 +113,19 @@
   <footer class="flex flex-col">
       <ul class="flex">
         <li class="flex tw">
-          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter fa-2xl"></i><span class="visually-hidden">twitter</span></a>
         </li>
         <li class="flex in">
-          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i><span class="visually-hidden">instagram</span></a>
         </li>
         <li class="flex fb">
-          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i><span class="visually-hidden">facebook</span></a>
         </li>
         <li class="flex yt">
-          <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i><span class="visually-hidden">youtube</span></a>
         </li>
         <li class="flex gh">
-          <a href="https://github.com" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fa-brands fa-github fa-2xl"></i><span class="visually-hidden">github</span></a>
         </li>
       </ul>
       <div class="flex">
