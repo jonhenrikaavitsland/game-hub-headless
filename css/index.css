@@ -240,9 +240,24 @@ img {
 3.  Typography
 */
 
+.title-info-container h3,
+.title-info-container h2,
 .cta-explore,
 .mobile-navigation a {
   text-transform: uppercase;
+}
+
+.price-before,
+.price,
+.age-rating-container span,
+.title-info-container h3,
+.title-info-container h2 {
+  font-family: var(--teko);
+}
+
+.title-info-container h2,
+.title-info-container h3 {
+  font-weight: var(--w4);
 }
 
 .decision-help section h2,
@@ -250,11 +265,29 @@ img {
   font-weight: var(--w6);
 }
 
+.sale-container a {
+  font-size: var(--s21);
+}
+
+.price,
+.age-rating-container span,
+.title-info-container h3,
+.title-info-container h2,
 .decision-help section h2,
 .hero-img h1 {
   font-size: var(--s28);
 }
 
+.price,
+.title-info-container h2,
+.title-info-container h3,
+.title-info-container p {
+  line-height: 0.7;
+}
+
+.price-before {
+  text-decoration: line-through;
+}
 
 /* 
 4.  Color
@@ -265,17 +298,24 @@ img {
   transition: 500ms
 }
 
+.circle-1,
+.price,
+.title-info-container i,
 .cta-explore,
 .add-fancy,
 .active {
   color: var(--fancy-green);
 }
 
+.age-rating-3,
+.age-rating-12,
+.age-rating-16,
 .decision-help,
 .search-btn i {
   color: var(--dark-blue);
 }
 
+.new-releases-container .cta-explore,
 .hamburger-wrap,
 .magnifying-wrap,
 .close-btn-wrap,
@@ -283,6 +323,7 @@ nav .active {
   color: var(--white-f2);
 }
 
+.game-card,
 .mobile-navigation {
   background-color: var(--light-blue);
 }
@@ -301,11 +342,21 @@ nav .active {
   background-color: #00000050
 }
 
+.age-rating-3,
 .decision-help section,
 .search-btn:hover,
 .desktop-srch-wrap,
 .desktop-srch-wrap input {
   background-color: var(--white-f2);
+}
+
+.age-rating-12,
+.age-rating-16 {
+  background-color: var(--rating-12-16);
+}
+
+.age-rating-18 {
+  background-color: var(--rating18);
 }
 
 .hamburger-wrap,
@@ -320,6 +371,10 @@ nav ul li {
 
 main .cta-explore {
   border-color: var(--light-blue);
+}
+
+.new-releases-container .cta-explore {
+  border-color: var(--white-f2);
 }
 
 .decision-help section h2 {
@@ -361,6 +416,9 @@ main .cta-explore {
   flex-direction: column;
 }
 
+.carousel-bottom-wrap,
+.sale-container,
+.star-container,
 .new-releases-container,
 .decision-help,
 .hero-img section,
@@ -392,6 +450,8 @@ footer li,
   justify-content: center;
 }
 
+.price-container,
+.title-info-container,
 .desktop-secondary-menu {
   align-items: flex-end;
 }
@@ -400,11 +460,15 @@ footer li,
   justify-content: space-between;
 }
 
+.sale-container,
+.star-container {
+  gap: 5px;
+}
+
 footer div {
   gap: 10px;
 }
 
-.main-home,
 .home-content-wrap-1,
 .desktop-secondary-menu,
 .desktop-secondary-menu ul,
@@ -412,8 +476,12 @@ footer div {
   gap: 30px;
 }
 
+.main-home {
+  gap: 60px;
+}
 
-
+.carousel-bottom-wrap i,
+.title-info-container section,
 footer ul li,
 .desktop-secondary-menu,
 .mobile-secondary-nav-wrap div {
@@ -440,6 +508,7 @@ nav,
   display: none;
 }
 
+.carousel-bottom-wrap i,
 .decision-help section h2 {
   text-align: center;
 }
@@ -479,6 +548,14 @@ footer li,
   height: 50px;
 }
 
+.carousel-bottom-wrap {
+  height: 60px;
+}
+
+.title-info-container {
+  height: 90px;
+}
+
 .logo-container-mobile img,
 .mobile-header {
   height: 120px;
@@ -503,6 +580,7 @@ footer {
   width: minmax(100px, 60%);
 }
 
+.title-info-container,
 .decision-help section h2,
 .decision-help section,
 .hero-img section,
@@ -515,6 +593,7 @@ div .mobile-srch-box,
   height: 100%;
 }
 
+.game-card,
 .decision-help section,
 .cta-explore,
 .desktop-srch-wrap,
@@ -528,6 +607,11 @@ div .mobile-srch-box,
 
 .desktop-srch-wrap input {
   border-radius: 8px 0 0 8px;
+}
+
+.cover,
+.game-card-img-wrap {
+  border-radius: 8px 8px 0 0;
 }
 
 nav li {
@@ -617,21 +701,51 @@ nav li,
 9.  Padding
 */
 
+.age-rating-container span {
+  padding: 0 6px;
+}
+
+.search-btn,
 .desktop-srch-wrap input {
   padding: 0 10px;
+}
+
+.game-card-lower-half-container {
+  padding: 0 10px 10px 10px;
+}
+
+.game-card-img-wrap {
+  padding: 5px;
+}
+
+.title-info-container {
+  padding: 5px 0;
 }
 
 .decision-help section {
   padding: 10px 10px 0 10px;
 }
 
+footer a {
+  padding: 10px;
+}
+
 .mobile-secondary-nav {
   padding: 10px 0;
+}
+
+.cta-explore,
+footer {
+  padding: 10px 20px
 }
 
 .desktop-secondary-menu a,
 .mobile-navigation ul a {
   padding: 13px 0;
+}
+
+.sale-container {
+  padding: 20px;
 }
 
 .mobile-navigation {
@@ -642,21 +756,8 @@ nav li,
   padding: 0 30px 0 0;
 }
 
-.search-btn {
-  padding: 0 10px;
-}
-
 nav li {
   padding: 1rem 2rem;
-}
-
-footer a {
-  padding: 10px;
-}
-
-.cta-explore,
-footer {
-  padding: 10px 20px
 }
 
 .hero-img section {
@@ -664,10 +765,12 @@ footer {
 }
 
 
+
+
 /* 
 10. Margin
 */
-
+.new-releases-container,
 .decision-help {
   margin: 0 20px;
 }

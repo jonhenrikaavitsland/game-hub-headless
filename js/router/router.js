@@ -22,6 +22,7 @@ export function router() {
       // do something
       break;
     case "/":
+    case "/index.html":
       return import("../pages/home.js");
   }
 }
