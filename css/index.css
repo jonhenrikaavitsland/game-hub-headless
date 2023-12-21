@@ -260,11 +260,13 @@ img {
   font-weight: var(--w4);
 }
 
+.carousel-wrap h2,
 .decision-help section h2,
 .hero-img h1 {
   font-weight: var(--w6);
 }
 
+.carousel-wrap h2,
 .sale-container a {
   font-size: var(--s21);
 }
@@ -508,6 +510,7 @@ nav,
   display: none;
 }
 
+.carousel-wrap h2,
 .carousel-bottom-wrap i,
 .decision-help section h2 {
   text-align: center;
@@ -521,7 +524,6 @@ nav,
 .hamburger-wrap {
   width: 50px;
 }
-
 
 .desktop-srch-wrap input {
   width: 200px;
@@ -568,6 +570,10 @@ footer {
 .desktop-header,
 .desktop-header img {
   height: 200px;
+}
+
+.game-card {
+  width: 250px;
 }
 
 .decision-help,
@@ -806,6 +812,14 @@ nav li {
     display: flex;
   }
 
+  .home-content-wrap-1 {
+    flex-direction: row;
+  }
+
+  .hero-img {
+    flex: 1;
+  }
+
 
   /* 
   7.  Layout
@@ -817,6 +831,7 @@ nav li {
     display: none;
   }
 
+  .hero-img,
   footer {
     height: auto;
   }
@@ -824,7 +839,6 @@ nav li {
   .hero-img {
     border-radius: var(--r16);
   }
-
 
   /* 
   8.  Positioning
@@ -843,4 +857,20 @@ nav li {
   /* 
   10. Margin
   */
+}
+
+
+@media (min-width: 1200px) {
+  .hero-img {
+    background-position-y: center;
+  }
+
+  .hero-img section {
+    align-items: flex-end;
+    padding: 100px 200px 100px 0;
+  }
+
+  .hero-img section a {
+    margin-right: 50px;
+  }
 }

@@ -1,11 +1,11 @@
 import { products } from "../../data/fetch/fetchProducts.js";
 import { filterNewReleases } from "../../data/createDataArrays/newReleases.js";
 import { clearReleaseList } from "../clearParentHtml.js";
-import { createHtmlObject, renderReleases } from "../renderGameCard.js";
+import { createHtmlObject } from "../renderGameCard.js";
 
-export async function runCarousels() {
-  const newReleases = filterNewReleases(products);
-  console.log(newReleases);
+export const newReleases = filterNewReleases(products);
+
+export function runCarousels() {
   const parent = document.querySelector(".new-releases-container");
 
   try {
@@ -19,6 +19,10 @@ export async function runCarousels() {
 export function renderCarousel(data, parent) {
   const wrap = document.createElement("div");
   wrap.classList.add("carousel-wrap");
+
+  const heading = document.createElement("h2");
+  heading.textContent = "New Releases";
+  wrap.append(heading);
 
   const gameCard = createHtmlObject(data, "home");
   wrap.append(gameCard);
