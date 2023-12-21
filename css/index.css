@@ -260,13 +260,12 @@ img {
   font-weight: var(--w4);
 }
 
-.carousel-wrap h2,
-.decision-help section h2,
+.headings,
 .hero-img h1 {
   font-weight: var(--w6);
 }
 
-.carousel-wrap h2,
+.headings,
 .sale-container a {
   font-size: var(--s21);
 }
@@ -275,7 +274,6 @@ img {
 .age-rating-container span,
 .title-info-container h3,
 .title-info-container h2,
-.decision-help section h2,
 .hero-img h1 {
   font-size: var(--s28);
 }
@@ -309,15 +307,20 @@ img {
   color: var(--fancy-green);
 }
 
+.heading-wrap,
 .age-rating-3,
 .age-rating-12,
 .age-rating-16,
-.decision-help,
 .search-btn i {
   color: var(--dark-blue);
 }
 
-.new-releases-container .cta-explore,
+.fa-arrows-rotate {
+  color: var(--dark-green);
+}
+
+.trending-now-container a,
+.new-releases-container a,
 .hamburger-wrap,
 .magnifying-wrap,
 .close-btn-wrap,
@@ -344,8 +347,8 @@ nav .active {
   background-color: #00000050
 }
 
+.heading-wrap,
 .age-rating-3,
-.decision-help section,
 .search-btn:hover,
 .desktop-srch-wrap,
 .desktop-srch-wrap input {
@@ -375,11 +378,12 @@ main .cta-explore {
   border-color: var(--light-blue);
 }
 
-.new-releases-container .cta-explore {
+.trending-now-container a,
+.new-releases-container a {
   border-color: var(--white-f2);
 }
 
-.decision-help section h2 {
+.heading-wrap {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -418,11 +422,9 @@ main .cta-explore {
   flex-direction: column;
 }
 
-.carousel-bottom-wrap,
+.heading-wrap,
 .sale-container,
 .star-container,
-.new-releases-container,
-.decision-help,
 .hero-img section,
 .hero-img,
 .cart-wrap,
@@ -437,8 +439,13 @@ footer li,
   align-items: center;
 }
 
+.trending-now-container,
+.new-releases-container {
+  flex-wrap: wrap;
+}
+
+.trending-now-container,
 .new-releases-container,
-.decision-help,
 .hero-img,
 .cart-wrap,
 .magnifying-wrap,
@@ -462,27 +469,29 @@ footer li,
   justify-content: space-between;
 }
 
+.heading-wrap {
+  justify-content: flex-end;
+}
+
 .sale-container,
 .star-container {
   gap: 5px;
 }
 
+.heading-wrap,
 footer div {
   gap: 10px;
 }
 
-.home-content-wrap-1,
+.trending-now-container,
+.new-releases-container,
+.main-home,
 .desktop-secondary-menu,
 .desktop-secondary-menu ul,
 .mobile-navigation ul {
   gap: 30px;
 }
 
-.main-home {
-  gap: 60px;
-}
-
-.carousel-bottom-wrap i,
 .title-info-container section,
 footer ul li,
 .desktop-secondary-menu,
@@ -495,7 +504,7 @@ footer ul li,
 7.  Layout
 */
 
-.decision-help section,
+.heading-wrap,
 .desktop-srch-wrap input,
 .search-btn,
 .fa-magnifying-glass,
@@ -510,12 +519,6 @@ nav,
   display: none;
 }
 
-.carousel-wrap h2,
-.carousel-bottom-wrap i,
-.decision-help section h2 {
-  text-align: center;
-}
-
 .cart-wrap,
 .magnifying-wrap,
 .acc-wrap,
@@ -527,10 +530,6 @@ nav,
 
 .desktop-srch-wrap input {
   width: 200px;
-}
-
-.decision-help section img {
-  width: 300px;
 }
 
 #mobile-srch-box {
@@ -548,10 +547,6 @@ footer li,
 .desktop-srch-wrap input,
 .mobile-srch-box input {
   height: 50px;
-}
-
-.carousel-bottom-wrap {
-  height: 60px;
 }
 
 .title-info-container {
@@ -576,19 +571,12 @@ footer {
   width: 250px;
 }
 
-.decision-help,
-.decision-help section {
-  height: 350px;
-}
-
 .mobile-navigation {
   height: 100vh;
   width: minmax(100px, 60%);
 }
 
 .title-info-container,
-.decision-help section h2,
-.decision-help section,
 .hero-img section,
 div .mobile-srch-box,
 .mobile-secondary-nav {
@@ -600,7 +588,6 @@ div .mobile-srch-box,
 }
 
 .game-card,
-.decision-help section,
 .cta-explore,
 .desktop-srch-wrap,
 .mobile-srch-box input {
@@ -622,6 +609,11 @@ div .mobile-srch-box,
 
 nav li {
   border-radius: 25px 25px 0 0;
+}
+
+.heading-wrap {
+  border-radius: 0 50px 50px 0;
+  width: clamp(320px, 50%, 700px);
 }
 
 .hamburger-wrap,
@@ -648,14 +640,12 @@ nav li,
 8.  Positioning
 */
 
-.decision-help section,
 .desktop-checkout-wrap,
 .mobile-secondary-nav-wrap,
 .mobile-header {
   position: relative;
 }
 
-.decision-help section img,
 .desktop-checkout-wrap span,
 .mobile-srch-box,
 .mobile-navigation,
@@ -689,10 +679,6 @@ nav li,
   bottom: 0px;
 }
 
-.decision-help section img {
-  bottom: -20.7px;
-}
-
 .mobile-srch-box {
   top: -80px;
 }
@@ -720,16 +706,17 @@ nav li,
   padding: 0 10px 10px 10px;
 }
 
+.trending-now-container,
+.new-releases-container {
+  padding: 0 20px;
+}
+
 .game-card-img-wrap {
   padding: 5px;
 }
 
 .title-info-container {
   padding: 5px 0;
-}
-
-.decision-help section {
-  padding: 10px 10px 0 10px;
 }
 
 footer a {
@@ -758,6 +745,10 @@ footer {
   padding: 20px 60px 0 10px;
 }
 
+.heading-wrap {
+  padding: 10px 50px 10px 0 ;
+}
+
 .desktop-secondary-menu {
   padding: 0 30px 0 0;
 }
@@ -767,7 +758,7 @@ nav li {
 }
 
 .hero-img section {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 
@@ -776,10 +767,11 @@ nav li {
 /* 
 10. Margin
 */
-.new-releases-container,
-.decision-help {
-  margin: 0 20px;
+
+.heading-wrap {
+  margin: 30px 0 0 0;
 }
+
 
 /* 
 11. @Media
@@ -812,12 +804,8 @@ nav li {
     display: flex;
   }
 
-  .home-content-wrap-1 {
-    flex-direction: row;
-  }
-
-  .hero-img {
-    flex: 1;
+  .hero-img section{
+    align-items: flex-end;
   }
 
 
@@ -831,14 +819,15 @@ nav li {
     display: none;
   }
 
-  .hero-img,
   footer {
     height: auto;
   }
 
   .hero-img {
-    border-radius: var(--r16);
+    height: 1000px;
+    background-position-y: center;
   }
+
 
   /* 
   8.  Positioning
@@ -849,8 +838,12 @@ nav li {
   9.  Padding
   */
 
-  main {
-    padding: 30px;
+  .hero-img section {
+    padding: 300px 100px;
+  }
+
+  .hero-img section a {
+    margin-right: 50px;
   }
 
 
@@ -859,18 +852,28 @@ nav li {
   */
 }
 
+@media (min-width: 850px) {
+  .new-releases-container,
+  .trending-now-container {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .new-releases-container,
+  .trending-now-container {
+    padding: 0 200px;
+  }
+}
 
 @media (min-width: 1200px) {
-  .hero-img {
-    background-position-y: center;
-  }
 
   .hero-img section {
-    align-items: flex-end;
-    padding: 100px 200px 100px 0;
+    padding: 300px 200px;
   }
 
-  .hero-img section a {
-    margin-right: 50px;
+  .new-releases-container,
+  .trending-now-container {
+    padding: 0 30px;
   }
 }

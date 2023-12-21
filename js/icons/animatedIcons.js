@@ -21,6 +21,8 @@ export function addAnimationToIcons() {
   const cartParent = document.querySelector(".cart-wrap");
   const closeBtn = document.querySelector(".fa-crosshairs-simple");
   const closeBtnParent = document.querySelector(".close-btn-wrap");
+  const swapBtn = document.querySelector(".fa-arrows-rotate");
+  const swapBtnParent = document.querySelector(".heading-container");
 
   animateIcon(hamburgerBtn, hamburgerParent);
   animateIcon(searchBtn, searchBtnParent);
@@ -33,22 +35,26 @@ export function addAnimationToIcons() {
   animateIcon(searchIcon, searchIconParent);
   animateIcon(cart, cartParent);
   animateIcon(closeBtn, closeBtnParent);
+  animateIcon(swapBtn, swapBtnParent);
 
   function animateIcon(icon, parent) {
     parent.onmouseover = event => {
       if (!icon.classList.contains("fa-bounce")) {
         icon.classList.add("fa-bounce");
+        icon.style.transition = "500ms";
       }
     };
 
     parent.onmouseleave = event => {
       if (icon.classList.contains("fa-bounce")) {
         icon.classList.remove("fa-bounce");
+        icon.style.transition = "0ms";
       }
     };
 
     parent.onclick = event => {
       icon.classList.remove("fa-bounce");
+      icon.style.transition = "0ms";
     };
   }
 }
