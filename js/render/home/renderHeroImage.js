@@ -32,11 +32,14 @@ export function renderHeroImage() {
     heading.textContent = "Ready to play?";
     element.append(heading);
 
+    const linkWrap = document.createElement("div");
+    element.append(linkWrap);
+
     const link = document.createElement("a");
     link.textContent = "Explore";
     link.href = "./games/";
     link.classList.add("cta-explore", "cta");
-    element.append(link);
+    linkWrap.append(link);
 
     heroImageParent.append(element);
   }
