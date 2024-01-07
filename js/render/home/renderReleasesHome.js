@@ -8,7 +8,6 @@ export async function renderReleasesHome() {
   const trendingNowParent = document.querySelector(".trending-now-container");
   const newReleases = filterNewReleases(products);
   const trendingNow = filterTrendingNow(products);
-  console.log(trendingNow);
   newReleasesParent.innerHTML = "";
   renderReleases(newReleases, newReleasesParent, "home");
   trendingNowParent.innerHTML = "";

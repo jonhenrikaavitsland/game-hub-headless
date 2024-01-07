@@ -260,11 +260,13 @@ img {
   font-weight: var(--w4);
 }
 
+.reviews-container h2,
 .headings,
 .hero-img h1 {
   font-weight: var(--w6);
 }
 
+.reviews-container h2,
 .headings,
 .sale-container a {
   font-size: var(--s21);
@@ -328,6 +330,7 @@ nav .active {
   color: var(--white-f2);
 }
 
+.reviews-wrap blockquote p,
 .game-card,
 .mobile-navigation {
   background-color: var(--light-blue);
@@ -362,6 +365,10 @@ nav .active {
 
 .age-rating-18 {
   background-color: var(--rating18);
+}
+
+.advert {
+  background-color: var(--black);
 }
 
 .hamburger-wrap,
@@ -422,6 +429,7 @@ main .cta-explore {
   flex-direction: column;
 }
 
+.reviews-container,
 .heading-wrap,
 .sale-container,
 .star-container,
@@ -444,6 +452,7 @@ footer li,
   flex-wrap: wrap;
 }
 
+.advert section,
 .trending-now-container,
 .new-releases-container,
 .hero-img,
@@ -483,6 +492,9 @@ footer div {
   gap: 10px;
 }
 
+.reviews-container,
+.advert section,
+.bottom-home-container,
 .trending-now-container,
 .new-releases-container,
 .main-home,
@@ -492,6 +504,8 @@ footer div {
   gap: 30px;
 }
 
+.advert div,
+.advert section,
 .title-info-container section,
 footer ul li,
 .desktop-secondary-menu,
@@ -511,6 +525,10 @@ footer ul li,
 .close-btn-wrap,
 .hamburger-wrap {
   cursor: pointer;
+}
+
+.advert section {
+  text-align: center;
 }
 
 nav,
@@ -587,6 +605,7 @@ div .mobile-srch-box,
   height: 100%;
 }
 
+.reviews-wrap blockquote p,
 .game-card,
 .cta-explore,
 .desktop-srch-wrap,
@@ -737,6 +756,10 @@ footer {
   padding: 13px 0;
 }
 
+.reviews-wrap blockquote p {
+  padding: 16px;
+}
+
 .sale-container {
   padding: 20px;
 }
@@ -761,6 +784,9 @@ nav li {
   padding: 100px 0;
 }
 
+.reviews-container {
+  padding: 30px 10vw 60px 10vw;
+}
 
 
 
@@ -768,8 +794,17 @@ nav li {
 10. Margin
 */
 
+blockquote,
+figure {
+  margin: 0;
+}
+
 .heading-wrap {
   margin: 30px 0 0 0;
+}
+
+.bottom-home-container {
+  margin: 0 0 60px 0;
 }
 
 
@@ -863,6 +898,21 @@ nav li {
   .new-releases-container,
   .trending-now-container {
     padding: 0 200px;
+  }
+
+  .bottom-home-container {
+    flex-direction: row;
+    padding: 30px 11vw;
+    gap: 30px;
+  }
+
+  .reviews-container,
+  .advert {
+    flex: 1;
+  }
+
+  .reviews-container {
+    padding: 0;
   }
 }
 

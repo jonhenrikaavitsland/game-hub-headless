@@ -6,10 +6,12 @@ console.log(mediaContents);
 
 export let logo;
 export let heroImage;
+export let advertImage;
 
 for (let i = 0; i < mediaContents.length; i++) {
   if (mediaContents[i].id === 36) logo = mediaContents[i];
   if (mediaContents[i].id === 52) heroImage = mediaContents[i];
+  if (mediaContents[i].id === 54) advertImage = mediaContents[i];
 }
 
 export async function mediaAllPages() {

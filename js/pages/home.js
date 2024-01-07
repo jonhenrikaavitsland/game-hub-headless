@@ -4,6 +4,7 @@ import {
   headingContainer,
   changeHeadingHome,
 } from "../functionality/changeHeadingHome.js";
+import { renderAdvertImage } from "../render/home/renderAdvert.js";
 
 createHome();
 
@@ -11,5 +12,6 @@ function createHome() {
   renderHeroImage();
   renderReleasesHome();
   headingContainer.addEventListener("click", changeHeadingHome);
+  renderAdvertImage();
 }
 
