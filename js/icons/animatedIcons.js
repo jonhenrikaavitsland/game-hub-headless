@@ -35,7 +35,10 @@ export function addAnimationToIcons() {
   animateIcon(searchIcon, searchIconParent);
   animateIcon(cart, cartParent);
   animateIcon(closeBtn, closeBtnParent);
-  animateIcon(swapBtn, swapBtnParent);
+  
+  if (location.pathname === "/" || location.pathname === "/index.html") {
+    animateIcon(swapBtn, swapBtnParent);
+  }
 
   function animateIcon(icon, parent) {
     parent.onmouseover = event => {
