@@ -267,6 +267,11 @@ img {
   font-weight: var(--w6);
 }
 
+.star-container,
+.title-info-container p {
+  font-size: var(--s16);
+}
+
 .reviews-container h2,
 .headings,
 .sale-container a {

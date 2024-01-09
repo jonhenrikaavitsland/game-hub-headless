@@ -13,6 +13,6 @@ function createGames() {
     clearReleaseList(parent);
     renderReleases(titles, parent, "games");
   } catch (error) {
-    console.log(error);
+    console.log("Ops! There was an error!", error);
   }
 }
