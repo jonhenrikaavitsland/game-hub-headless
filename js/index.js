@@ -6,6 +6,6 @@ import { renderLogo } from "./render/renderLogo.js";
 
 mediaAllPages();
 menus();
-router();
+router(); //  page specific code, see router.js
 addAnimationToIcons();
 renderLogo();

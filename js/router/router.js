@@ -4,8 +4,7 @@ export function router() {
       // dp something
       break;
     case "/games/":
-      // do something
-      break;
+      return import("../pages/games.js");
     case "/checkout/success/":
       // do something
       break;
