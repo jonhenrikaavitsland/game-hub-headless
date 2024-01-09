@@ -23,6 +23,8 @@ export function addAnimationToIcons() {
   const closeBtnParent = document.querySelector(".close-btn-wrap");
   const swapBtn = document.querySelector(".fa-arrows-rotate");
   const swapBtnParent = document.querySelector(".heading-container");
+  const filterBtn = document.querySelector(".fa-chevrons-down");
+  const filterParent = document.querySelector(".filter-options-container");
 
   animateIcon(hamburgerBtn, hamburgerParent);
   animateIcon(searchBtn, searchBtnParent);
@@ -35,9 +37,13 @@ export function addAnimationToIcons() {
   animateIcon(searchIcon, searchIconParent);
   animateIcon(cart, cartParent);
   animateIcon(closeBtn, closeBtnParent);
-  
+
   if (location.pathname === "/" || location.pathname === "/index.html") {
     animateIcon(swapBtn, swapBtnParent);
+  }
+
+  if (location.pathname === "/games/") {
+    animateIcon(filterBtn, filterParent);
   }
 
   function animateIcon(icon, parent) {

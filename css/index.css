@@ -260,6 +260,7 @@ img {
   font-weight: var(--w4);
 }
 
+.games-wrap h1,
 .reviews-container h2,
 .headings,
 .hero-img h1 {
@@ -272,6 +273,7 @@ img {
   font-size: var(--s21);
 }
 
+.games-wrap,
 .price,
 .age-rating-container span,
 .title-info-container h3,
@@ -309,6 +311,7 @@ img {
   color: var(--fancy-green);
 }
 
+.filter-options-container,
 .heading-wrap,
 .age-rating-3,
 .age-rating-12,
@@ -321,6 +324,7 @@ img {
   color: var(--dark-green);
 }
 
+.games-container a,
 .trending-now-container a,
 .new-releases-container a,
 .hamburger-wrap,
@@ -350,6 +354,7 @@ nav .active {
   background-color: #00000050
 }
 
+.filter-options-container,
 .heading-wrap,
 .age-rating-3,
 .search-btn:hover,
@@ -385,6 +390,7 @@ main .cta-explore {
   border-color: var(--light-blue);
 }
 
+.games-container a,
 .trending-now-container a,
 .new-releases-container a {
   border-color: var(--white-f2);
@@ -429,6 +435,14 @@ main .cta-explore {
   flex-direction: column;
 }
 
+.games-container,
+.trending-now-container,
+.new-releases-container {
+  flex-wrap: wrap;
+}
+
+.games-wrap,
+.filter-options-container,
 .reviews-container,
 .heading-wrap,
 .sale-container,
@@ -447,11 +461,8 @@ footer li,
   align-items: center;
 }
 
-.trending-now-container,
-.new-releases-container {
-  flex-wrap: wrap;
-}
-
+.games-container,
+.filter-options-container,
 .advert section,
 .trending-now-container,
 .new-releases-container,
@@ -478,6 +489,7 @@ footer li,
   justify-content: space-between;
 }
 
+.filter-wrap,
 .heading-wrap {
   justify-content: flex-end;
 }
@@ -487,11 +499,14 @@ footer li,
   gap: 5px;
 }
 
+.filter-options-container,
 .heading-wrap,
 footer div {
   gap: 10px;
 }
 
+.games-container,
+.games-wrap,
 .reviews-container,
 .advert section,
 .bottom-home-container,
@@ -502,6 +517,10 @@ footer div {
 .desktop-secondary-menu ul,
 .mobile-navigation ul {
   gap: 30px;
+}
+
+.games-container {
+  gap: 40px;
 }
 
 .advert div,
@@ -518,6 +537,7 @@ footer ul li,
 7.  Layout
 */
 
+.filter-options-container,
 .heading-wrap,
 .desktop-srch-wrap input,
 .search-btn,
@@ -550,8 +570,8 @@ nav,
   width: 200px;
 }
 
-#mobile-srch-box {
-  height: 70px;
+.filter-options-container {
+  height: 32px;
 }
 
 .cart-wrap,
@@ -565,6 +585,10 @@ footer li,
 .desktop-srch-wrap input,
 .mobile-srch-box input {
   height: 50px;
+}
+
+#mobile-srch-box {
+  height: 70px;
 }
 
 .title-info-container {
@@ -603,6 +627,10 @@ div .mobile-srch-box,
 
 .hero-img section {
   height: 100%;
+}
+
+.filter-options-container {
+  border-radius: 5px;
 }
 
 .reviews-wrap blockquote p,
@@ -716,6 +744,7 @@ nav li,
   padding: 0 6px;
 }
 
+.filter-options-container,
 .search-btn,
 .desktop-srch-wrap input {
   padding: 0 10px;
@@ -725,6 +754,7 @@ nav li,
   padding: 0 10px 10px 10px;
 }
 
+.games-container,
 .trending-now-container,
 .new-releases-container {
   padding: 0 20px;
@@ -788,6 +818,10 @@ nav li {
   padding: 30px 10vw 60px 10vw;
 }
 
+.filter-wrap {
+  padding-right: 10vw;
+}
+
 
 
 /* 
@@ -799,8 +833,16 @@ figure {
   margin: 0;
 }
 
+.filter-wrap {
+  margin: 20px 0;
+}
+
 .heading-wrap {
   margin: 30px 0 0 0;
+}
+
+.games-wrap {
+  margin: 0 0 60px 0;
 }
 
 .bottom-home-container {
@@ -873,6 +915,10 @@ figure {
   9.  Padding
   */
 
+  .games-container {
+    padding: 0 30px;
+  }
+
   .hero-img section {
     padding: 200px 100px;
   }
@@ -925,5 +971,11 @@ figure {
   .new-releases-container,
   .trending-now-container {
     padding: 0 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .games-container {
+    padding: 0 50px;
   }
 }
