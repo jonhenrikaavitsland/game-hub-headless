@@ -1,8 +1,7 @@
 export function router() {
   switch (location.pathname) {
     case "/games/title/":
-      // dp something
-      break;
+      return import("../pages/title.js");
     case "/games/":
       return import("../pages/games.js");
     case "/checkout/success/":

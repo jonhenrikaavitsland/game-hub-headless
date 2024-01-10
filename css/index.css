@@ -446,6 +446,7 @@ main .cta-explore {
   flex-wrap: wrap;
 }
 
+.breadcrumb,
 .games-wrap,
 .filter-options-container,
 .reviews-container,
@@ -502,6 +503,10 @@ footer li,
 .sale-container,
 .star-container {
   gap: 5px;
+}
+
+.breadcrumb {
+  gap: 6px;
 }
 
 .filter-options-container,
@@ -784,6 +789,10 @@ footer a {
 .cta-explore,
 footer {
   padding: 10px 20px
+}
+
+.breadcrumb {
+  padding: 10px 0 40px 20px;
 }
 
 .desktop-secondary-menu a,
