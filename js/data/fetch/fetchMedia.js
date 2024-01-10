@@ -1,7 +1,7 @@
 import { urlMedia } from "../api/constants.js";
 import { fetchData } from "../api/fetchData.js";
 
-const mediaContents = await fetchMedia(urlMedia);
+export const mediaContents = await fetchMedia(urlMedia);
 console.log(mediaContents);
 
 export let logo;
