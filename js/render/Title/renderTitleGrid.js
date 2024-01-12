@@ -1,3 +1,4 @@
+import { renderProductDescription } from "./renderProductDescription.js";
 import { renderPurchaseContainer } from "./renderPurchaseContainer.js";
 import { renderTitleImg } from "./renderTitleImg.js";
 
@@ -7,7 +8,8 @@ export function renderTitleGridParent(parent, title) {
 
   const productImage = renderTitleImg(title);
   const purchaseContainer = renderPurchaseContainer(title);
-  element.append(productImage, purchaseContainer);
+  const productDescriptionContainer = renderProductDescription(title);
+  element.append(productImage, purchaseContainer, productDescriptionContainer);
 
   parent.append(element);
 }
