@@ -3,24 +3,33 @@ export function renderProductDescription(title) {
   element.classList.add("flex", "flex-col", "product-description-container");
 
   const descriptionSection = document.createElement("section");
-  descriptionSection.textContent = "Product description:";
   element.append(descriptionSection);
+
+  const descriptionHeader = document.createElement("h2");
+  descriptionHeader.textContent = "Product description:";
+  descriptionSection.append(descriptionHeader);
 
   const description = document.createElement("p");
   description.innerHTML = title.short_description;
   descriptionSection.append(description);
 
   const categoryContainer = document.createElement("section");
-  categoryContainer.textContent = "Category:";
   element.append(categoryContainer);
+
+  const categoryHeader = document.createElement("h2");
+  categoryHeader.textContent = "Category:";
+  categoryContainer.append(categoryHeader);
 
   const category = document.createElement("p");
   category.innerHTML = title.categories[0].name;
   categoryContainer.append(category);
 
   const parentalContainer = document.createElement("section");
-  parentalContainer.textContent = "Parental:";
   element.append(parentalContainer);
+
+  const parentalHeader = document.createElement("h2");
+  parentalHeader.textContent = "Parental:";
+  parentalContainer.append(parentalHeader);
 
   const parental = document.createElement("p");
   parental.textContent = "Age Rating: " + title.attributes[0].terms[0].name;

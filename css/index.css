@@ -248,6 +248,8 @@ img {
   text-transform: uppercase;
 }
 
+.age-box span,
+.product-description-container h2,
 .title-price-before,
 .title-price,
 .title-section h1,
@@ -259,6 +261,7 @@ img {
   font-family: var(--teko);
 }
 
+.product-description-container h2,
 .title-section h1,
 .title-info-container h2,
 .title-info-container h3 {
@@ -284,6 +287,8 @@ img {
   font-size: var(--s21);
 }
 
+.age-box span,
+.product-description-container h2,
 .title-price,
 .title-section h1,
 .games-wrap,
@@ -295,6 +300,7 @@ img {
   font-size: var(--s28);
 }
 
+.product-description-container h2,
 .title-price,
 .title-section h1,
 .price,
@@ -461,6 +467,7 @@ main .cta-explore {
   flex-wrap: wrap;
 }
 
+.age-box,
 .title-info-section,
 .purchase-container,
 .star-wrap,
@@ -486,6 +493,7 @@ footer li,
   align-items: center;
 }
 
+.age-box,
 .product-img-container,
 .games-container,
 .filter-options-container,
@@ -536,6 +544,10 @@ footer li,
 .heading-wrap,
 footer div {
   gap: 10px;
+}
+
+.product-description-container {
+  gap: 20px;
 }
 
 .games-container,
@@ -852,6 +864,10 @@ footer {
 
 .product-img-container {
   padding: 40px 10vw;
+}
+
+.product-description-container {
+  padding: 40px 20px;
 }
 
 .mobile-navigation {
