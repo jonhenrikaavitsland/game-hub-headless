@@ -26,7 +26,7 @@ async function createTitle() {
     changeTitleTag(title);
     clearReleaseList(parent);
     renderTitleHeading(title, parent, reviews);
-    renderTitleGridParent(parent, title);
+    renderTitleGridParent(parent, title, reviews);
     console.log(title);
     console.log(reviews);
   } catch (error) {

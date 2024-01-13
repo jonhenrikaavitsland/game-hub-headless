@@ -240,6 +240,14 @@ img {
 3.  Typography
 */
 
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
 .cta-sale,
 .title-info-container h3,
 .title-info-container h2,
