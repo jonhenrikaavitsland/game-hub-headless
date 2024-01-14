@@ -15,5 +15,3 @@ function createSearchObjects() {
     games.push(object);
   }
 }
-
-console.log(games);

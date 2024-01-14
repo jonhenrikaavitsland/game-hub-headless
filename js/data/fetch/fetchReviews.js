@@ -10,4 +10,3 @@ export const reviews = await fetchDataGET(
   consumerKeyReviews,
   consumerSecretReviews
 );
-console.log(reviews);

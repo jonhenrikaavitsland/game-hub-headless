@@ -2,7 +2,6 @@ import { urlMedia } from "../api/constants.js";
 import { fetchData } from "../api/fetchData.js";
 
 export const mediaContents = await fetchMedia(urlMedia);
-console.log(mediaContents);
 
 export let logo;
 export let heroImage;
