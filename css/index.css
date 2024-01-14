@@ -283,6 +283,7 @@ blockquote p::after {
   font-weight: var(--w6);
 }
 
+.price-before,
 .star-container,
 .title-info-container p {
   font-size: var(--s16);
