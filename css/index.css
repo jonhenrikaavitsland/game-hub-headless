@@ -756,6 +756,7 @@ nav li,
   position: relative;
 }
 
+.search-overlay,
 .desktop-checkout-wrap span,
 .mobile-srch-box,
 .mobile-navigation,
@@ -765,6 +766,10 @@ nav li,
 
 .mobile-secondary-nav {
   position: fixed;
+}
+
+.search-overlay {
+  z-index: 6;
 }
 
 .mobile-srch-box,
