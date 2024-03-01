@@ -21,7 +21,7 @@ The website is a commercial store online that sells games. It started with plain
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:jonhenrikaavitsland/game-hub-headless.git
 ```
 
 2. Install the dependencies:
